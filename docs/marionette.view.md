@@ -118,11 +118,11 @@ method on the view.
 Backbone.Marionette.CompositeView.extend({
 
   modelEvents: {
-    "change:name": "nameChanged" // equivilent to view.bindTo(view.model, "change:name", view.nameChanged, view)
+    "change:name": "nameChanged" // equivalent to view.bindTo(view.model, "change:name", view.nameChanged, view)
   },
 
   collectionEvents: {
-    "add": "itemAdded" // equivilent to view.bindTo(view.collection, "add", collection.itemAdded, view)
+    "add": "itemAdded" // equivalent to view.bindTo(view.collection, "add", collection.itemAdded, view)
   },
 
   // ... event handler methods
@@ -134,7 +134,7 @@ Backbone.Marionette.CompositeView.extend({
 
 These will use the memory safe `bindTo`, and will set the context
 (the value of `this`) in the handler to be the view. Events are
-bound at the time of instanciation, and an exception will be thrown
+bound at the time of instantiation instanciation, and an exception will be thrown
 if the handlers on the view do not exist.
 
 ## View.serializeData
